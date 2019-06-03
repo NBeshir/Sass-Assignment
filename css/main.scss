@@ -1,0 +1,74 @@
+
+$margin:2px;
+
+$box-size:100px;
+$display:none;
+$colors:(
+
+    primary:gray,
+    secondary:yellow,
+    text:green
+);
+$positions:(
+    pos1:relative,
+    pos2:absolute
+);
+$size:(
+    width:100px,
+    height:200px
+);
+$display:(
+    opt1:none,
+    opt2:inline-block
+);
+@function double($size){
+    @return $size*2;
+}
+
+body{
+    background-color: map-get($colors,primary);
+}
+
+#outerbox{
+   position: map-get($positions,pos1);
+}
+.box{
+    margin:$margin;
+    background-color: map-get($colors,secondary);
+    width:double($box-size);
+    height:map-get($size,height);
+    display: map-get($display,opt1);
+   position: map-get($positions,pos2);
+  border-radius:10px;
+  text-align:center;
+  color:map-get($colors,text);
+   
+    
+}
+$shift:(
+   
+    toLeft2:250px,
+    toLeft3:500px,
+    toLeft4:750px,
+    toBottom:1px
+);
+
+.div2{
+    left: map-get($shift,toLeft2);
+    top: map-get($shift,toBottom);
+    
+
+}
+ .div3{
+   left: map-get($shift,toLeft3);
+    top: map-get($shift,toBottom);
+
+}
+.div4{
+    left: map-get($shift,toLeft4);
+    top: map-get($shift,toBottom);
+
+}
+#btn{
+    margin-top:map-get($shift,toLeft2);
+}

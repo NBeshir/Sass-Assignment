@@ -1,0 +1,39 @@
+body {
+  background-color: gray;
+}
+
+#outerbox {
+  position: relative;
+}
+
+.box {
+  margin: 2px;
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  color: green;
+}
+
+.div2 {
+  left: 250px;
+  top: 1px;
+}
+
+.div3 {
+  left: 500px;
+  top: 1px;
+}
+
+.div4 {
+  left: 750px;
+  top: 1px;
+}
+
+#btn {
+  margin-top: 250px;
+}
+/*# sourceMappingURL=main.css.map */

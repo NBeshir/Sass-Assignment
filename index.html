@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+        <style>
+                
+                </style>
+        <div id="outerbox">
+                <div class="box div1">
+                <h1>div 1</h1>
+                </div>
+                <div class="box div2">
+                        <h1>div2</h1>
+                </div>
+                <div class="box div3">
+                        <h1>div3</h1>
+                </div>
+                <div class="box div4">
+                        <h1>div4</h1>
+                </div>
+               
+        </div>
+        
+    
+    
+    <script>
+    //var button=document.getElementById('btn');
+  //  var outerbox=document.getElementById('outerbox');
+   // var box=document.getElementsByClassName('box')
+    
+        $(document).ready(function(){
+        $('#btn').click(function(){
+                setTimeout(function(){
+                        $('.div1').show()
+                },2000)
+                setTimeout(function(){
+                        $('.div2').show()
+                },3000)
+                setTimeout(function(){
+                        $('.div3').show()
+                },4000)
+                setTimeout(function(){
+                        $('.div4').show()
+                },5000)
+           
+        })
+  
+    });
+    </script>
+     <button id="btn">Click me!</button>
+</body>
+</html>
